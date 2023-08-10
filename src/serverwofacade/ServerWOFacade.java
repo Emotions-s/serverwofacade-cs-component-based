@@ -8,8 +8,9 @@ package serverwofacade;
 public class ServerWOFacade {
 
     public static void main(String[] args) {
-        ServerFacade.startServer();
-        ServerFacade.stopServer();
+        ServerFacade server = ServerFacade.getServer();
+        server.startServer();
+        server.stopServer();
     }
 
 }
